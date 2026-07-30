@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data &amp; Privacy Rights — Glass Shoe</title>
+  <meta name="description" content="Export or delete your Glass Shoe data, delete your account, or withdraw biometric consent. In-app tools plus a web request form.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Glass Shoe home">
+        <svg class="mark" width="26" height="26" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M17.5 6.5c2.6 0 4.4 2.4 4.4 6 0 5.2-2.3 12.2-2.3 17.4 0 3.4-1.6 5.6-4.6 5.6-3.1 0-4.8-2.3-4.8-5.9 0-2.2.5-4.3.5-6.6 0-2.2-.7-3.6-.7-6.4 0-6 3.1-9.7 7.5-9.7Z"/>
+          <ellipse fill="currentColor" cx="10.3" cy="40.2" rx="3" ry="2.5"/>
+          <path fill="currentColor" d="M32.5 12.5c3.9 0 6.6 3.3 6.6 8.4 0 2.4-.6 3.9-.6 6 0 2 .4 3.8.4 5.7 0 3.1-1.5 5.2-4.2 5.2-2.7 0-4-2-4-5 0-4.7-2.1-11-2.1-15.6 0-3.6 1.6-6 3.9-6Z"/>
+          <ellipse fill="currentColor" cx="40.4" cy="42.4" rx="2.7" ry="2.3"/>
+        </svg>
+        Glass Shoe
+      </a>
+      <nav class="primary" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="data-rights.html" aria-current="page">Your data</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section container">
+      <div class="prose">
+        <h1>Data &amp; Privacy Rights</h1>
+        <p class="lead">Access, export, or delete your Glass Shoe data — including deleting your account and withdrawing biometric (foot-scan) consent.</p>
+
+        <div class="callout">
+          <p style="margin:0"><strong>Fastest option — do it in the app.</strong> Open Glass Shoe and go to
+          <strong>Profile → Privacy &amp; data</strong>. There you can instantly:</p>
+          <ul style="margin:0.5rem 0 0">
+            <li><strong>Export my data (JSON)</strong> — download everything we hold about you.</li>
+            <li><strong>Delete my data</strong> — erase your scans, sizes, and preferences.</li>
+            <li><strong>Delete my account</strong> — permanently remove your account and all its data.</li>
+            <li><strong>Withdraw consent &amp; delete my scans</strong> — revoke biometric consent; your stored foot measurements are deleted.</li>
+          </ul>
+        </div>
+
+        <h2>Request it from the web</h2>
+        <p>No longer have the app installed, or prefer to request in writing? Submit the form below.
+        We verify every request against your account email and respond within the time your law
+        requires (up to 45 days for US state privacy requests). You can also email us directly at
+        <a href="mailto:turtle91021.gnps@gmail.com?subject=Data%20request">turtle91021.gnps@gmail.com</a>.</p>
+
+        <form class="request" id="request-form" novalidate
+              action="mailto:turtle91021.gnps@gmail.com" method="post" enctype="text/plain">
+          <div class="field">
+            <label for="email">Account email <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
+            <p class="hint" id="email-hint">The email on your Glass Shoe account — we use it to verify the request.</p>
+            <input type="email" id="email" name="email" required autocomplete="email"
+                   aria-describedby="email-hint email-error" aria-required="true">
+            <p class="status" id="email-error" role="alert"></p>
+          </div>
+
+          <fieldset class="field">
+            <legend>What would you like to do? <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(required)</span></legend>
+            <div class="radio">
+              <input type="radio" id="r-delete-account" name="requestType" value="Delete my account and all data" required>
+              <label for="r-delete-account">Delete my account and all data</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="r-delete-data" name="requestType" value="Delete my data (keep account)">
+              <label for="r-delete-data">Delete my data but keep my account</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="r-withdraw" name="requestType" value="Withdraw biometric consent and delete my scans">
+              <label for="r-withdraw">Withdraw biometric consent &amp; delete my foot scans</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="r-export" name="requestType" value="Export a copy of my data">
+              <label for="r-export">Send me a copy of my data (access / export)</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="r-correct" name="requestType" value="Correct my data">
+              <label for="r-correct">Correct my data</label>
+            </div>
+            <p class="status" id="type-error" role="alert"></p>
+          </fieldset>
+
+          <div class="field">
+            <label for="details">Anything else we should know? <span class="muted">(optional)</span></label>
+            <textarea id="details" name="details" aria-describedby="details-hint"></textarea>
+            <p class="hint" id="details-hint">Optional — e.g. which data to correct, or your state of residence.</p>
+          </div>
+
+          <div class="btn-row">
+            <button type="submit" class="btn btn-danger">Submit request</button>
+          </div>
+
+          <p class="status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <h2>What happens next</h2>
+        <ul>
+          <li><strong>Verification.</strong> We confirm the request came from the account owner using your account email.</li>
+          <li><strong>Deletion.</strong> Deleting your data or account removes your sign-in, foot scans, sizes, saved shoes, and preferences. Withdrawing biometric consent deletes your stored measurements. This can't be undone.</li>
+          <li><strong>What we may keep.</strong> Order records are retained where tax and accounting law requires, and content already aggregated or de-identified (so it no longer identifies you) is not reversible.</li>
+          <li><strong>Timing.</strong> We respond within the period your law requires — for US state privacy requests, within 45 days.</li>
+          <li><strong>Appeals.</strong> If we decline a request, you may appeal by replying "Appeal". If the appeal is denied you may contact your state Attorney General.</li>
+        </ul>
+
+        <h2>US state privacy rights</h2>
+        <p>If your state has a comprehensive privacy law (including California, Colorado, Connecticut,
+        Texas, Oregon, Virginia, and others), you have rights to access, correct, delete, and obtain a
+        portable copy of your personal information, and to be free from discrimination for exercising them.</p>
+        <ul>
+          <li>We do <strong>not</strong> sell your personal information and do <strong>not</strong> share it for
+          targeted or cross-context behavioral advertising. Because we don't sell or share, we don't offer a
+          "Do Not Sell or Share My Personal Information" link; where required, we honor the Global Privacy Control.</li>
+          <li>Your foot measurements are <strong>sensitive information</strong> used only to provide the fit
+          services you request — never to identify you, never for advertising, and never sold or shared.</li>
+        </ul>
+
+        <h2>Biometric &amp; consumer health data</h2>
+        <p>Foot measurements may be treated as biometric information (e.g. Illinois BIPA, GDPR) and as consumer
+        health data (e.g. Washington's My Health My Data Act, Nevada SB 370). We collect and process them only
+        with your explicit, separate consent, solely to compute your fit, and we never sell them. See our
+        <a href="privacy.html">Privacy Policy</a> and
+        <a href="consumer-health-data.html">Consumer Health Data Privacy Policy</a> for full detail.</p>
+
+        <p class="muted fineprint">Prefer email? Contact <a href="mailto:turtle91021.gnps@gmail.com">turtle91021.gnps@gmail.com</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container foot-inner">
+      <div>
+        <p style="margin:0 0 0.25rem"><strong>Glass Shoe</strong></p>
+        <p class="fineprint" style="margin:0">Fit scores are algorithmic estimates, not guarantees. Glass Shoe is an independent app, not affiliated with any shoe brand.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="data-rights.html">Your data</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="consumer-health-data.html">Consumer health data</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="mailto:turtle91021.gnps@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
