@@ -13,17 +13,15 @@
   <header class="site">
     <div class="nav-inner">
       <a class="brand" href="index.html" aria-label="Glass Shoe home">
-        <svg class="mark" width="26" height="26" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
-          <path fill="currentColor" d="M17.5 6.5c2.6 0 4.4 2.4 4.4 6 0 5.2-2.3 12.2-2.3 17.4 0 3.4-1.6 5.6-4.6 5.6-3.1 0-4.8-2.3-4.8-5.9 0-2.2.5-4.3.5-6.6 0-2.2-.7-3.6-.7-6.4 0-6 3.1-9.7 7.5-9.7Z"/>
-          <ellipse fill="currentColor" cx="10.3" cy="40.2" rx="3" ry="2.5"/>
-          <path fill="currentColor" d="M32.5 12.5c3.9 0 6.6 3.3 6.6 8.4 0 2.4-.6 3.9-.6 6 0 2 .4 3.8.4 5.7 0 3.1-1.5 5.2-4.2 5.2-2.7 0-4-2-4-5 0-4.7-2.1-11-2.1-15.6 0-3.6 1.6-6 3.9-6Z"/>
-          <ellipse fill="currentColor" cx="40.4" cy="42.4" rx="2.7" ry="2.3"/>
+        <svg class="mark" width="34" height="23" viewBox="2 17 89 62" role="img" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M5 60 C6 55.5 10 52.5 16 52 C26 51.2 35 50 44 48 C56 45.3 72 30 84 20 C86 20.5 88 22 88 24 L88 74 C88 75.3 87 76 86 76 L79 76 C78.3 76 78 75.3 78 74 L75.5 52 C70 57 52 70 40 73.5 C28 75.8 18 74.5 12 72 C7 70 5 64 5 60 Z"/>
         </svg>
         Glass Shoe
       </a>
       <nav class="primary" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="get.html">Get the app</a></li>
           <li><a href="support.html">Support</a></li>
           <li><a href="data-rights.html">Your data</a></li>
           <li><a href="privacy.html" aria-current="page">Privacy</a></li>
@@ -38,7 +36,7 @@
     <section class="section container">
       <div class="prose">
         <h1>Privacy Policy</h1>
-        <p class="effective">Effective 2026-07-30</p>
+        <p class="effective">Effective 2026-08-26</p>
 
         <h2>1. What we collect</h2>
         <p><strong>We do not collect your name</strong> — there is nowhere to enter one, and we do not ask Apple
@@ -56,12 +54,17 @@
         shoes you save or mark as owned; a record of the consents you give (which document, which version, when),
         which we keep as proof that we asked; and product interaction
         events (e.g. app opens, scans completed, buy-link taps). Our default camera/LiDAR scan computes
-        measurements on your device and never uploads camera images; a small set of scan photos (your feet
-        with the detected outline) is kept <strong>on your device only</strong> so you can review the scan,
-        and is deleted when you delete your data. If you use the <strong>optional</strong> "Analyze a photo"
+        measurements on your device; a small set of scan photos (your feet with the detected outline) is kept
+        on your device so you can review the scan. <strong>While you are signed in, those scan photos are also
+        backed up to your account</strong> — a private, encrypted storage folder on our servers that only your
+        own account can read — so your scans follow you to a new phone. Backup is on by default and you can turn
+        it off anytime in <strong>Profile &rarr; Privacy &amp; data</strong>, which also deletes every photo
+        already backed up; deleting a scan or your data deletes its backup too. Backed-up photos are used for
+        <strong>nothing</strong> except showing you your own scans — never to train AI, never shown to anyone
+        else, never sold. If you use the <strong>optional</strong> "Analyze a photo"
         feature, we analyze the photo <strong>on your device</strong> first, and in that case it is never
-        transmitted anywhere. Only if the on-device analysis cannot find both feet, and you are signed in, <strong>and you give separate permission at that moment</strong>, do we send that photo to a third-party AI service (Anthropic) to estimate your foot shape; it is deleted by them within 30 days, is never used to train AI models, and is never stored on our servers. We ask before the photo leaves your device, and you can turn that permission on or off anytime in <strong>Profile &rarr; Privacy &amp; data</strong>. Either way a copy stays on your device along with the resulting
-        shape estimate.</p>
+        transmitted for analysis. Only if the on-device analysis cannot find both feet, and you are signed in, <strong>and you give separate permission at that moment</strong>, do we send that photo to a third-party AI service (Anthropic) to estimate your foot shape; it is deleted by them within 30 days and is never used to train AI models. We ask before the photo leaves your device for that service, and you can turn that permission on or off anytime in <strong>Profile &rarr; Privacy &amp; data</strong>. Either way a copy stays on your device (and in your account backup, if that is on) along with the resulting
+        shape estimate &mdash; and nowhere else on our servers.</p>
 
         <h2>2. Biometric data</h2>
         <p>Foot measurements may be treated as biometric data under laws including the Colorado Privacy Act
@@ -90,8 +93,11 @@
           if you never ask us to delete anything.</li>
         </ul>
         <p>Destruction means the record is deleted from our live systems, and from backups on their normal rotation
-        (no longer than 90 days). Scan photos and any analyzed photo live only on your device and go when you delete
-        your data or the app.</p>
+        (no longer than 90 days). Scan photos and any analyzed photo live on your device and, if photo backup is on,
+        in your account's private storage; the server copies are deleted when you delete the scan, turn photo backup
+        off, or delete your data or account &mdash; and in every case under the same outer limits above. Deleting the
+        app deletes the device copies; your account backup (if on) remains so your scans survive a reinstall, until
+        you delete it by any of the routes above.</p>
         <p><strong>Security-incident protocol.</strong> If we discover a breach affecting foot measurements, we
         investigate and contain it, notify affected users by email without unreasonable delay (and in every case
         within any deadline your state's law sets), notify regulators where required, and record what happened and

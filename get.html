@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Glass Shoe — Know your fit for every shoe</title>
+  <meta name="description" content="Scan your feet once and get a % fit score and your true size for every shoe. Free on the App Store for iPhone.">
+  <link rel="canonical" href="https://geepadoodle.github.io/glass-shoe-site/get.html">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Link previews (Instagram, TikTok, iMessage, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Glass Shoe">
+  <meta property="og:title" content="Glass Shoe — Know your fit.">
+  <meta property="og:description" content="Scan your feet once and get a % fit score and your true size for every shoe. Free on the App Store.">
+  <meta property="og:url" content="https://geepadoodle.github.io/glass-shoe-site/get.html">
+  <meta property="og:image" content="https://geepadoodle.github.io/glass-shoe-site/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Apple Smart App Banner: iOS Safari offers a native install strip on top -->
+  <meta name="apple-itunes-app" content="app-id=6796485986">
+
+  <style>
+    /* get.html only — install landing page. Uses the shared tokens in styles.css. */
+    .get-head { border-bottom: 1px solid var(--stroke); }
+    .get-head .nav-inner { justify-content: center; padding-top: 1rem; padding-bottom: 1rem; }
+
+    .get-hero { text-align: center; padding: 2.5rem 0 2rem; }
+    .get-hero .rule { margin-left: auto; margin-right: auto; }
+    .get-hero .lead { margin-left: auto; margin-right: auto; }
+
+    .app-icon {
+      width: 96px; height: 96px;
+      border-radius: 22px;
+      border: 1px solid var(--stroke);
+      display: block; margin: 0 auto 1.25rem;
+      box-shadow: 0 8px 24px -12px rgb(0 0 0 / 0.35);
+    }
+
+    .btn-install {
+      width: 100%;
+      max-width: 22rem;
+      min-height: 60px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin: 1.75rem auto 0;
+    }
+    .meta-line {
+      margin: 0.85rem 0 0;
+      color: var(--ink-3);
+      font-size: 0.95rem;
+    }
+
+    /* Screenshot strip — scrolls sideways on phones, centred on wide screens. */
+    .shots {
+      display: flex;
+      gap: 0.9rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 0.25rem 1.25rem 1.25rem;
+      margin: 0 -1.25rem;
+      -webkit-overflow-scrolling: touch;
+    }
+    .shots img {
+      flex: 0 0 auto;
+      width: 190px;
+      border-radius: var(--radius);
+      border: 1px solid var(--stroke);
+      background: var(--surface-2);
+      scroll-snap-align: center;
+    }
+    @media (min-width: 620px) { .shots { justify-content: center; } .shots img { width: 210px; } }
+
+    /* QR card for people who land here on a laptop. */
+    .qr-card { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; }
+    /* Always dark-on-light, in both themes: iOS Camera does not reliably read an
+       inverted QR code, so this tile opts out of the dark palette on purpose. */
+    .qr-card .qr {
+      flex: 0 0 auto;
+      width: 132px; height: 132px;
+      padding: 10px;
+      background: #ffffff;
+      border: 1px solid #d9d9d4;
+      border-radius: var(--radius-sm);
+      color: #16161a;
+    }
+    .qr-card .qr svg { display: block; width: 100%; height: 100%; }
+    .qr-card .qr-text { flex: 1 1 14rem; }
+    .qr-card h3 { margin: 0 0 0.35rem; }
+    .qr-card p { margin: 0; color: var(--ink-2); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site get-head">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Glass Shoe home">
+        <svg class="mark" width="34" height="23" viewBox="2 17 89 62" role="img" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M5 60 C6 55.5 10 52.5 16 52 C26 51.2 35 50 44 48 C56 45.3 72 30 84 20 C86 20.5 88 22 88 24 L88 74 C88 75.3 87 76 86 76 L79 76 C78.3 76 78 75.3 78 74 L75.5 52 C70 57 52 70 40 73.5 C28 75.8 18 74.5 12 72 C7 70 5 64 5 60 Z"/>
+        </svg>
+        Glass Shoe
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero get-hero container" aria-labelledby="hero-title">
+      <img class="app-icon" src="app-icon-256.png" width="96" height="96"
+           alt="Glass Shoe app icon — a blue slipper on white">
+      <h1 id="hero-title">Know your fit.</h1>
+      <hr class="rule" aria-hidden="true">
+      <p class="lead">Scan your feet once and get a&nbsp;% fit score and your true size for every shoe — so you can buy with zero guesswork.</p>
+
+      <a class="btn btn-primary btn-install" href="https://apps.apple.com/app/id6796485986">
+        Download on the App&nbsp;Store
+      </a>
+      <p class="meta-line">Free &middot; iPhone &middot; Requires iOS&nbsp;17 or later</p>
+    </section>
+
+    <section class="section" aria-labelledby="peek-title">
+      <div class="container">
+        <h2 id="peek-title" class="visually-hidden">A look inside the app</h2>
+        <div class="shots">
+          <img src="shot-02-feet.jpg" width="405" height="880" loading="lazy" decoding="async"
+               alt="The Glass Shoe scan screen showing a measured foot outline with length and width.">
+          <img src="shot-06-explore.jpg" width="405" height="880" loading="lazy" decoding="async"
+               alt="Browsing shoes in Glass Shoe, each with its own fit percentage.">
+          <img src="shot-01-foryou.jpg" width="405" height="880" loading="lazy" decoding="async"
+               alt="A personalized For You feed of shoes ranked by how well they fit.">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title">Why people use it</h2>
+        <ul class="features">
+          <li>
+            <span class="dot" style="background: var(--spectrum-5)" aria-hidden="true"></span>
+            <div>
+              <h3>A&nbsp;% fit score for any shoe</h3>
+              <p>Every shoe gets a personalized rating based on your real foot measurements.</p>
+            </div>
+          </li>
+          <li>
+            <span class="dot" style="background: var(--spectrum-4)" aria-hidden="true"></span>
+            <div>
+              <h3>Your true size in every brand</h3>
+              <p>See the size to actually order — in US, UK, EU, or centimeters, translated per brand.</p>
+            </div>
+          </li>
+          <li>
+            <span class="dot" style="background: var(--spectrum-2)" aria-hidden="true"></span>
+            <div>
+              <h3>Private by design</h3>
+              <p>Scans are computed on your device. We store measurements, never camera images, and only with your explicit consent.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="qr-title">
+      <div class="container">
+        <h2 id="qr-title" class="visually-hidden">Install from a computer</h2>
+        <div class="card qr-card">
+          <div class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" shape-rendering="crispEdges" role="img" aria-label="QR code linking to Glass Shoe on the App Store"><path fill="currentColor" d="M2 2h7v1h-7zM11 2h1v1h-1zM14 2h2v1h-2zM17 2h6v1h-6zM24 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM11 3h1v1h-1zM14 3h1v1h-1zM17 3h1v1h-1zM20 3h1v1h-1zM22 3h1v1h-1zM24 3h1v1h-1zM30 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM11 4h2v1h-2zM14 4h1v1h-1zM16 4h1v1h-1zM19 4h1v1h-1zM22 4h1v1h-1zM24 4h1v1h-1zM26 4h3v1h-3zM30 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM13 5h1v1h-1zM17 5h2v1h-2zM20 5h1v1h-1zM24 5h1v1h-1zM26 5h3v1h-3zM30 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM11 6h1v1h-1zM13 6h2v1h-2zM17 6h1v1h-1zM20 6h1v1h-1zM24 6h1v1h-1zM26 6h3v1h-3zM30 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM12 7h1v1h-1zM15 7h3v1h-3zM21 7h1v1h-1zM24 7h1v1h-1zM30 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h7v1h-7zM11 9h2v1h-2zM14 9h1v1h-1zM17 9h6v1h-6zM2 10h1v1h-1zM5 10h1v1h-1zM7 10h2v1h-2zM10 10h3v1h-3zM15 10h1v1h-1zM17 10h1v1h-1zM21 10h1v1h-1zM23 10h1v1h-1zM25 10h1v1h-1zM3 11h2v1h-2zM6 11h2v1h-2zM12 11h1v1h-1zM15 11h2v1h-2zM19 11h2v1h-2zM22 11h4v1h-4zM27 11h1v1h-1zM30 11h1v1h-1zM2 12h1v1h-1zM5 12h1v1h-1zM7 12h2v1h-2zM10 12h1v1h-1zM13 12h1v1h-1zM20 12h2v1h-2zM23 12h3v1h-3zM27 12h3v1h-3zM3 13h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM9 13h3v1h-3zM15 13h4v1h-4zM22 13h3v1h-3zM28 13h2v1h-2zM4 14h2v1h-2zM8 14h2v1h-2zM16 14h1v1h-1zM19 14h1v1h-1zM22 14h4v1h-4zM27 14h1v1h-1zM29 14h2v1h-2zM2 15h2v1h-2zM5 15h3v1h-3zM9 15h1v1h-1zM12 15h4v1h-4zM18 15h6v1h-6zM2 16h3v1h-3zM8 16h1v1h-1zM12 16h2v1h-2zM15 16h2v1h-2zM18 16h3v1h-3zM24 16h7v1h-7zM2 17h2v1h-2zM5 17h3v1h-3zM11 17h1v1h-1zM13 17h2v1h-2zM18 17h2v1h-2zM22 17h1v1h-1zM25 17h1v1h-1zM27 17h1v1h-1zM29 17h1v1h-1zM4 18h3v1h-3zM8 18h8v1h-8zM18 18h3v1h-3zM22 18h2v1h-2zM25 18h1v1h-1zM29 18h1v1h-1zM4 19h1v1h-1zM6 19h2v1h-2zM9 19h2v1h-2zM15 19h2v1h-2zM19 19h1v1h-1zM22 19h1v1h-1zM24 19h2v1h-2zM27 19h1v1h-1zM30 19h1v1h-1zM2 20h1v1h-1zM4 20h1v1h-1zM8 20h1v1h-1zM10 20h2v1h-2zM13 20h2v1h-2zM16 20h1v1h-1zM19 20h1v1h-1zM24 20h1v1h-1zM26 20h1v1h-1zM29 20h2v1h-2zM5 21h2v1h-2zM13 21h1v1h-1zM16 21h5v1h-5zM22 21h4v1h-4zM29 21h2v1h-2zM2 22h1v1h-1zM5 22h1v1h-1zM8 22h1v1h-1zM10 22h1v1h-1zM12 22h2v1h-2zM17 22h1v1h-1zM22 22h5v1h-5zM28 22h1v1h-1zM10 23h1v1h-1zM13 23h1v1h-1zM16 23h1v1h-1zM21 23h2v1h-2zM26 23h1v1h-1zM28 23h3v1h-3zM2 24h7v1h-7zM11 24h1v1h-1zM13 24h2v1h-2zM18 24h1v1h-1zM20 24h1v1h-1zM22 24h1v1h-1zM24 24h1v1h-1zM26 24h1v1h-1zM29 24h1v1h-1zM2 25h1v1h-1zM8 25h1v1h-1zM10 25h2v1h-2zM14 25h1v1h-1zM16 25h1v1h-1zM18 25h1v1h-1zM20 25h1v1h-1zM22 25h1v1h-1zM26 25h3v1h-3zM30 25h1v1h-1zM2 26h1v1h-1zM4 26h3v1h-3zM8 26h1v1h-1zM11 26h1v1h-1zM14 26h1v1h-1zM19 26h1v1h-1zM22 26h5v1h-5zM29 26h2v1h-2zM2 27h1v1h-1zM4 27h3v1h-3zM8 27h1v1h-1zM10 27h6v1h-6zM18 27h2v1h-2zM24 27h1v1h-1zM26 27h4v1h-4zM2 28h1v1h-1zM4 28h3v1h-3zM8 28h1v1h-1zM18 28h2v1h-2zM21 28h3v1h-3zM26 28h3v1h-3zM30 28h1v1h-1zM2 29h1v1h-1zM8 29h1v1h-1zM12 29h1v1h-1zM16 29h1v1h-1zM18 29h2v1h-2zM21 29h3v1h-3zM29 29h1v1h-1zM2 30h7v1h-7zM10 30h5v1h-5zM16 30h1v1h-1zM18 30h3v1h-3zM22 30h1v1h-1zM26 30h2v1h-2zM29 30h1v1h-1z"/></svg></div>
+          <div class="qr-text">
+            <h3>On a laptop?</h3>
+            <p>Point your iPhone camera at this code to open Glass&nbsp;Shoe on the App&nbsp;Store.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container foot-inner">
+      <div>
+        <p style="margin:0 0 0.25rem"><strong>Glass Shoe</strong></p>
+        <p class="fineprint" style="margin:0">Fit scores are algorithmic estimates, not guarantees. Glass Shoe is an independent app, not affiliated with any shoe brand.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="mailto:turtle91021.gnps@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

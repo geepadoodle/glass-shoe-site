@@ -13,17 +13,15 @@
   <header class="site">
     <div class="nav-inner">
       <a class="brand" href="index.html" aria-label="Glass Shoe home">
-        <svg class="mark" width="26" height="26" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
-          <path fill="currentColor" d="M17.5 6.5c2.6 0 4.4 2.4 4.4 6 0 5.2-2.3 12.2-2.3 17.4 0 3.4-1.6 5.6-4.6 5.6-3.1 0-4.8-2.3-4.8-5.9 0-2.2.5-4.3.5-6.6 0-2.2-.7-3.6-.7-6.4 0-6 3.1-9.7 7.5-9.7Z"/>
-          <ellipse fill="currentColor" cx="10.3" cy="40.2" rx="3" ry="2.5"/>
-          <path fill="currentColor" d="M32.5 12.5c3.9 0 6.6 3.3 6.6 8.4 0 2.4-.6 3.9-.6 6 0 2 .4 3.8.4 5.7 0 3.1-1.5 5.2-4.2 5.2-2.7 0-4-2-4-5 0-4.7-2.1-11-2.1-15.6 0-3.6 1.6-6 3.9-6Z"/>
-          <ellipse fill="currentColor" cx="40.4" cy="42.4" rx="2.7" ry="2.3"/>
+        <svg class="mark" width="34" height="23" viewBox="2 17 89 62" role="img" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M5 60 C6 55.5 10 52.5 16 52 C26 51.2 35 50 44 48 C56 45.3 72 30 84 20 C86 20.5 88 22 88 24 L88 74 C88 75.3 87 76 86 76 L79 76 C78.3 76 78 75.3 78 74 L75.5 52 C70 57 52 70 40 73.5 C28 75.8 18 74.5 12 72 C7 70 5 64 5 60 Z"/>
         </svg>
         Glass Shoe
       </a>
       <nav class="primary" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="get.html">Get the app</a></li>
           <li><a href="support.html">Support</a></li>
           <li><a href="data-rights.html">Your data</a></li>
           <li><a href="privacy.html">Privacy</a></li>
@@ -38,7 +36,7 @@
     <section class="section container">
       <div class="prose">
         <h1>Consumer Health Data Privacy Policy</h1>
-        <p class="effective">Effective 2026-07-30</p>
+        <p class="effective">Effective 2026-08-26</p>
 
         <p>This policy covers data that state consumer-health-data laws (e.g. Washington's My Health My Data
         Act, Nevada SB 370) may treat as consumer health data. It is provided as a separate policy, in addition
@@ -48,11 +46,14 @@
         <p>Foot measurements you capture (foot length, width, and instep height in millimeters) and data derived
         from them (estimated shoe size and foot-shape category). Collected and used for one purpose: computing
         shoe-fit ratings and size recommendations you request. For the default camera/LiDAR scan, measurements
-        are computed on your device and we do <strong>not</strong> collect images, video, depth maps, meshes,
-        or 3D models of your feet to our servers; a few scan-review photos are stored only on your device and
-        deleted when you delete your data. The optional "Analyze a photo" feature is the one transmission
-        exception: the single photo you choose is sent to a third-party AI processor to estimate foot shape
-        and is deleted by them within 30 days and never stored on our servers — a copy remains on your device (see §4).</p>
+        are computed on your device; we never collect video, depth maps, meshes, or 3D models of your feet.
+        Scan-review photos are stored on your device and &mdash; while you are signed in with photo backup on
+        (the default) &mdash; in your account's private server storage, readable only by your own account and
+        used solely to show you your scans; turning backup off in <strong>Profile &rarr; Privacy &amp; data</strong>
+        deletes the server copies, and deleting a scan or your data deletes them too. The optional "Analyze a
+        photo" feature additionally sends the single photo you choose to a third-party AI processor to estimate
+        foot shape; the processor deletes it within 30 days and does not retain or train on it, and we keep it
+        only as your device copy and your account backup (see §4).</p>
 
         <h2>2. Sources</h2>
         <p>Directly from you: your device's camera/LiDAR scan, your manual measurement entry, your size
